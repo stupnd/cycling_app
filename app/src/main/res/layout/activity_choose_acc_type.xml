@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.MainActivity">
+
+  <LinearLayout
+      android:id="@+id/bgrndLayout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="horizontal">
+
+    <VideoView
+        android:id="@+id/videoView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+
+        android:layout_weight="1"
+        android:src="@raw/test" />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="#B3445471"
+      android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/logoLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+      <Space
+          android:layout_width="match_parent"
+          android:layout_height="182dp"
+          android:layout_gravity="center_vertical"
+          android:layout_weight="1" />
+
+      <TextView
+          android:id="@+id/logoText"
+          android:layout_width="273dp"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:shadowColor="#DDA15E"
+          android:shadowDx="5"
+          android:shadowDy="5"
+          android:shadowRadius="40"
+          android:text="@string/title"
+          android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+          android:textColor="#B3FEFAE0"
+          android:textStyle="bold" />
+
+      <Space
+          android:layout_width="match_parent"
+          android:layout_height="65dp"
+          android:layout_gravity="center_vertical"
+          android:layout_weight="1" />
+
+      <TextView
+          android:id="@+id/chooseAccText"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="@string/chooseAcc"
+          android:textAppearance="@style/TextAppearance.AppCompat.Large"
+          android:textColor="#FEFAE0" />
+
+      <Space
+          android:layout_width="match_parent"
+          android:layout_height="70dp"
+          android:layout_gravity="center_vertical"
+          android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+      <Space
+          android:layout_width="50dp"
+          android:layout_height="wrap_content" />
+
+      <Button
+          android:id="@+id/createClubBtn"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:backgroundTint="#DDA15E"
+          android:text="@string/cyclingClub"
+          android:textColor="#FEFAE0"
+          tools:layout_conversion_absoluteHeight="48dp"
+          tools:layout_conversion_absoluteWidth="127dp"
+          tools:layout_editor_absoluteX="91dp"
+          tools:layout_editor_absoluteY="489dp" />
+
+      <Space
+          android:layout_width="54dp"
+          android:layout_height="wrap_content" />
+
+      <Button
+          android:id="@+id/createMmbrBtn"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:backgroundTint="#DDA15E"
+          android:text="@string/member"
+          android:textColor="#FEFAE0"
+          tools:layout_conversion_absoluteHeight="48dp"
+          tools:layout_conversion_absoluteWidth="101dp"
+          tools:layout_editor_absoluteX="219dp"
+          tools:layout_editor_absoluteY="489dp" />
+
+      <Space
+          android:layout_width="50dp"
+          android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+</RelativeLayout>

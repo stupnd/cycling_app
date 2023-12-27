@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F4E3"
+    tools:context=".Admin.Admin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/clubOwnerToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#101935"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_anchor="@+id/clubOwnerToolbar"
+            app:layout_anchorGravity="center"
+            app:navigationIcon="@android:drawable/divider_horizontal_bright"
+            app:title="Edit Club Details"
+            app:titleTextColor="#FFFFFF"/>
+
+
+
+        <ImageView
+            android:id="@+id/clubPic"
+            android:paddingTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#F8F4E3"
+            android:contentDescription="Click to add or edit your picture"
+            android:contextClickable="false"
+            android:onClick="OnSetClubPicButton"
+           />
+
+        <TextView
+            android:id="@+id/clubPhotoTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="Click above to add or edit your Club Logo"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/instaLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="Enter the link to your social media"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="#878787"
+            android:paddingTop="50dp"/>
+
+        <TextView
+            android:id="@+id/instagramTextview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Instagram"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/contactName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="Enter the name of the main contact"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="#878787"
+            android:paddingTop="50dp"/>
+
+        <TextView
+            android:id="@+id/contactTextfield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Main Contact"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/phoneNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="Enter the contact's phone number"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="#878787"
+            android:paddingTop="50dp"/>
+
+        <TextView
+            android:id="@+id/phoneNumTextfield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Phone Number"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="356dp"
+                android:layout_height="101dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/accountBtn3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:width="300dp"
+                    android:height="225dp"
+                    android:backgroundTint="#101935"
+                    android:text="Submit"
+                    android:textColor="#F8F4E3"
+                    android:textSize="24sp"
+                    app:cornerRadius="20dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="end"
+        android:orientation="vertical"/>
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:backgroundTint="#101935"
+        android:layout_gravity="right"
+        android:contentDescription="backButton"
+        android:src="@android:drawable/ic_menu_revert" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

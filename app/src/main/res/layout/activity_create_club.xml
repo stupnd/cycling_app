@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/bgrndLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <VideoView
+            android:id="@+id/videoView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+
+            android:layout_weight="1"
+            android:src="@raw/test" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B3445471"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/logoLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="182dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/logoText"
+                android:layout_width="273dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:shadowColor="#DDA15E"
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowRadius="40"
+                android:text="@string/title"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textColor="#B3FEFAE0"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/clubName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/clubName"
+                android:autofillHints="club name"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:shadowColor="#000000"
+                android:shadowDx="1.5"
+                android:shadowDy="1.3"
+                android:shadowRadius="1.6"
+                android:textColor="#B3FEFAE0"
+                android:textColorHint="#B3FEFAE0" />
+
+            <EditText
+                android:id="@+id/newUsername1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/userHint"
+                android:autofillHints="username"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:shadowColor="#000000"
+                android:shadowDx="1.5"
+                android:shadowDy="1.3"
+                android:shadowRadius="1.6"
+                android:textColor="#B3FEFAE0"
+                android:textColorHint="#B3FEFAE0" />
+
+            <EditText
+                android:id="@+id/newPassword1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/passHint"
+                android:autofillHints="password"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:shadowColor="#000000"
+                android:shadowDx="1.5"
+                android:shadowDy="1.3"
+                android:shadowRadius="1.6"
+                android:textColor="#B3FEFAE0"
+                android:textColorHint="#B3FEFAE0" />
+
+            <EditText
+                android:id="@+id/repassword1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/rePassword"
+                android:autofillHints="password"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:shadowColor="#000000"
+                android:shadowDx="1.5"
+                android:shadowDy="1.3"
+                android:shadowRadius="1.6"
+                android:textColor="#B3FEFAE0"
+                android:textColorHint="#B3FEFAE0" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="19dp" />
+
+            <Button
+                android:id="@+id/create1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#DDA15E"
+                android:text="@string/createAccount_btn01"
+                android:textColor="#FEFAE0" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

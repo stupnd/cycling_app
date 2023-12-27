@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SEG2105Project"
+        tools:targetApi="31">
+        <activity
+            android:name=".Member.MemberSearch"
+            android:exported="false" />
+        <activity
+            android:name=".ClubOwner.EditProfile"
+            android:exported="true" />
+        <activity
+            android:name=".ClubOwner.ClubOwner"
+            android:exported="false" />
+        <activity
+            android:name=".ClubOwner.ClubOwnerMembers"
+            android:exported="true" />
+        <activity
+            android:name=".ClubOwner.ClubEvent"
+            android:exported="false" />
+        <activity
+            android:name=".ClubOwner.MemberList"
+            android:exported="true" />
+        <activity
+            android:name=".Admin.AdminAccounts"
+            android:exported="true" />
+        <activity
+            android:name=".Main.CreateClub"
+            android:exported="true" />
+        <activity
+            android:name=".Main.ChooseAccType"
+            android:exported="true" />
+        <activity
+            android:name=".Main.CreateAccount"
+            android:exported="true" />
+        <activity
+            android:name=".Member.Member"
+            android:exported="true" />
+        <activity
+            android:name=".Member.Feedback"
+            android:exported="true" />
+        <activity
+            android:name=".Member.Rating"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.Admin"
+            android:exported="true" />
+        <activity
+            android:name=".Admin.EventPage"
+            android:exported="true" />
+        <activity
+            android:name=".Main.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

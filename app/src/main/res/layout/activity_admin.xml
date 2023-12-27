@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F8F4E3"
+    tools:context=".Admin.Admin">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/adminToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#101935"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:navigationIcon="@android:drawable/divider_horizontal_bright"
+        app:title="Admin Dashboard"
+        app:titleTextColor="#FFFFFF" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="735dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+
+        <com.anychart.AnyChartView
+            android:id="@+id/any_chart_view"
+            android:layout_width="358dp"
+            android:layout_height="295dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+
+        <LinearLayout
+            android:layout_width="356dp"
+            android:layout_height="101dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/accountBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:width="300dp"
+                android:height="225dp"
+                android:backgroundTint="#101935"
+                android:text="Accounts"
+                android:textColor="#F8F4E3"
+                android:textSize="24sp"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="159dp"
+            android:layout_gravity="bottom"
+            android:background="?android:attr/listDivider" />
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:layout_anchor="@+id/linearLayout"
+        app:layout_anchorGravity="bottom|center">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+
+
+            app:itemIconTint="@color/cyan"
+            app:itemTextColor="#F8F4E3"
+            app:menu="@menu/bottom_nav_menu" />
+
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/searchBtn"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#DDCCCC"
+        android:contentDescription="addEventButton"
+        android:src="@drawable/baseline_directions_bike_24"
+        app:backgroundTint="#2D728F"
+        app:elevation="6dp"
+        app:fabCustomSize="80dp"
+        app:fabSize="auto"
+        app:layout_anchor="@id/bottomAppBar"
+        app:rippleColor="#FFE6E6" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
